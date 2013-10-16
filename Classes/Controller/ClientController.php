@@ -42,7 +42,7 @@ class ClientController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 	 */
 	protected $clientRepository;
 	
-		/**
+	/**
 	* Action-Unabhaengige Inits 
 	* @return void
 	*/
@@ -55,14 +55,6 @@ class ClientController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
 				->forProperty('dateOfBirth')
 				->setTypeConverterOption('TYPO3\\CMS\\Extbase\\Property\\TypeConverter\\DateTimeConverter', \TYPO3\CMS\Extbase\Property\TypeConverter\DateTimeConverter::CONFIGURATION_DATE_FORMAT, 'd.m.Y');
 		}
-		
-		if (isset($this->arguments['newClient'])) {
-			$this->arguments['newClient']
-				->getPropertyMappingConfiguration()
-				->forProperty('dateOfBirth')
-				->setTypeConverterOption('TYPO3\\CMS\\Extbase\\Property\\TypeConverter\\DateTimeConverter', \TYPO3\CMS\Extbase\Property\TypeConverter\DateTimeConverter::CONFIGURATION_DATE_FORMAT, 'd.m.Y');
-		}
-		
 	}
 	
 
