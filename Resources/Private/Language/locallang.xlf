@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-15T17:57:53Z" product-name="test">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_test_domain_model_client">
+				<source>Client</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_client.name">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="tx_test_domain_model_client.date_of_birth">
+				<source>dateOfBirth</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

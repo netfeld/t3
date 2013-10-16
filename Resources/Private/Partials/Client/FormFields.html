@@ -1,0 +1,9 @@
+<label for="name">
+	<f:translate key="tx_test_domain_model_client.name" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="name" /><br />
+<label for="dateOfBirth">
+	<f:translate key="tx_test_domain_model_client.date_of_birth" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="dateOfBirth"  value="{client.dateOfBirth-> f:format.date( format: 'd.m.Y' )}" /><br />
+	
